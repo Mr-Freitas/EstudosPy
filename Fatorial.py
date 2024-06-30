@@ -1,9 +1,6 @@
 def fatorial(n):
-    the_product = 1
-    while n >0:
-        the_product *= n 
-        n = n -1
-    print(the_product) 
+    if n == 0:
+        return 1
+    return n * fatorial(n-1)
 
-
-fatorial(5)
+print(fatorial(5)) 
