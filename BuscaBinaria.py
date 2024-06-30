@@ -21,4 +21,10 @@ list = [1,2,3,4,5,6,7,8,9,10]
 print(BinarySearch(list,11))
 print(bisect_left(list, 2))
 
+def binary_Search(list,traget):
+    index = bisect_left(list,traget)
+    if index <= len(list) and list[index] == traget:
+        return True
+    return False
+
 
